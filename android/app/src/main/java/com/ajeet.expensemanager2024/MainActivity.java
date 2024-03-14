@@ -1,4 +1,4 @@
-package com.expensetracker;
+package com.ajeet.expensemanager2024;
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

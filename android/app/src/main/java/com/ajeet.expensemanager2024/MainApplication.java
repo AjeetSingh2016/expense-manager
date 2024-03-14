@@ -1,4 +1,4 @@
-package com.expensetracker;
+package com.ajeet.expensemanager2024;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

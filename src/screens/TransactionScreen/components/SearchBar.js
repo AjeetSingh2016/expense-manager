@@ -2,13 +2,13 @@ import {StyleSheet, Text, View, TextInput} from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import React from 'react';
 
-const SearchBar = () => {
+const SearchBar = ({ searchQuery, setSearchQuery }) => {
   return (
     <View
       style={{
         width: '100%',
         height: 60,
-        marginTop: 25,
+        marginTop: 10,
         justifyContent: 'center',
         alignItems: 'center',
       }}>
@@ -23,7 +23,7 @@ const SearchBar = () => {
           borderRadius: 10,
           paddingHorizontal: 10
         }}>
-        <TextInput placeholder="Search your transaction.." />
+        <TextInput placeholder="Search your transaction.." onChangeText={text => setSearchQuery(text)} value={searchQuery}/>
         <FontAwesomeIcon icon="chevron-right" color={'#FAB007'} size={20} />
       </View>
     </View>

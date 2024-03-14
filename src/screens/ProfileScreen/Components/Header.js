@@ -2,6 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {responsiveFontSize} from 'react-native-responsive-dimensions';
 const Header = () => {
+  
   return (
     <View
       style={{

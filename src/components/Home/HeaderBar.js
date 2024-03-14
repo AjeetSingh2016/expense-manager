@@ -1,15 +1,17 @@
 import { View, Text, Image, StyleSheet,TouchableOpacity } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import React from 'react'
+import MyContext from '../../context/MyContext';
+import React,{useContext} from 'react'
 
 const HeaderBar = () => {
+  const {name, setName} = useContext(MyContext);
   return (
     <View style={{backgroundColor: "#183153", height: "100%", flexDirection: 'row', display: "flex", justifyContent: "space-between", alignItems: "center", paddingHorizontal: 20}}>
 
       <View style={{paddingLeft: 10}}>
         <Text style={{color: "#FFD43B", fontSize: 12}}> Good Morning! 👋</Text>
-        <Text style={{color: "white", fontSize: 24, fontWeight: "500"}}>Ajeet Singh</Text>
+        <Text style={{color: "white", fontSize: 24, fontWeight: "500"}}>{name}</Text>
       </View>
 
       <View>

@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.expensetracker"
+    namespace "com.ajeet.expensemanager2024"
     defaultConfig {
-        applicationId "com.expensetracker"
+        applicationId "com.ajeet.expensemanager2024"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -121,3 +121,5 @@ dependencies {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+
+apply plugin: 'com.google.gms.google-services'
